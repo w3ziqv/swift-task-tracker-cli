@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:task-tracker}",
+            "name": "Debug task-tracker",
+            "target": "task-tracker",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug task-tracker"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:task-tracker}",
+            "name": "Release task-tracker",
+            "target": "task-tracker",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release task-tracker"
+        }
+    ]
+}
