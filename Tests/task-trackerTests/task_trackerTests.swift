@@ -1,8 +1,8 @@
 import Testing
 @testable import task_tracker
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-    // Swift Testing Documentation
-    // https://swiftpackageindex.com/swiftlang/swift-testing/documentation
-}
+// This file imports all test files to ensure they are discovered by the test runner
+// Individual test files are organized by feature/module
+
+// Import all test files
+// All tests are defined in separate files for better organization
