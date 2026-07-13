@@ -8,6 +8,11 @@ A simple task tracker written in Swift as a beginner project for learning progra
 - Add a new task
 - Mark a task as completed
 - Remove a task
+- Save tasks to a JSON file (`tasks.json` in the current directory)
+- Load tasks after restarting the app
+- Task priorities (high, medium, low)
+- Input validation for empty titles, invalid numbers, and out-of-range priorities
+- Colored terminal output (green for done, red for high priority, yellow for medium)
 - Simple interactive terminal menu
 
 ## Tech Stack
@@ -36,6 +41,16 @@ swift run
 3. Oznacz jako zrobione
 4. Usuń zadanie
 5. Wyjście
+Wybierz opcję:
+```
+
+When adding a task, the app also asks for a priority:
+
+```text
+Podaj nazwę zadania:
+Nauczyć się Swifta
+Priorytet (1 = wysoki, 2 = średni, 3 = niski):
+1
 ```
 
 ## Why I Built This
@@ -49,16 +64,14 @@ It helped me practice:
 - structs,
 - arrays,
 - user input handling,
+- file I/O with `FileManager` and `JSONEncoder` / `JSONDecoder`,
+- encoding and decoding data with `Codable`,
 - building a simple CLI application.
 
 ## Future Improvements
 
 Planned next steps:
 
-- save tasks to a JSON file,
-- load tasks after restarting the app,
-- add task priorities,
-- improve input validation,
 - make terminal output nicer.
 
 ## License
