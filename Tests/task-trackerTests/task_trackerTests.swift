@@ -16,7 +16,7 @@ struct TerminalFormattingTests {
     func visibleCountUnicode() {
         #expect(visibleCount("✓") == 1)
         #expect(visibleCount("█░") == 2)
-        #expect(visibleCount("zażółć") == 7)
+        #expect(visibleCount("zażółć") == 6)
         #expect(visibleCount("│") == 1)
     }
 
