@@ -22,6 +22,7 @@ enum Language: String, CaseIterable {
 }
 
 /// Localized strings for the application
+@MainActor
 struct LocalizedStrings {
     static func get(_ key: String) -> String {
         let translations: [Language: [String: String]] = [

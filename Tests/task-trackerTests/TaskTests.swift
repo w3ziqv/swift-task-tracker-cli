@@ -111,6 +111,7 @@ import Testing
 
 // MARK: - Language Tests
 
+@MainActor
 @Test func testLanguageToggle() {
     let initial = Language.current
     Language.toggle()
@@ -119,6 +120,7 @@ import Testing
     #expect(Language.current == initial)
 }
 
+@MainActor
 @Test func testSetLanguage() {
     Language.setLanguage("en")
     #expect(Language.current == .english)
@@ -132,6 +134,7 @@ import Testing
 
 // MARK: - LocalizedStrings Tests
 
+@MainActor
 @Test func testLocalizedStringsPolish() {
     Language.setLanguage("pl")
     #expect(LocalizedStrings.get("app_title") == "=== ZARZĄDZANIE ZADANIAMI ===")
@@ -139,6 +142,7 @@ import Testing
     #expect(LocalizedStrings.get("goodbye") == "Koniec programu.")
 }
 
+@MainActor
 @Test func testLocalizedStringsEnglish() {
     Language.setLanguage("en")
     #expect(LocalizedStrings.get("app_title") == "=== TASK TRACKER ===")
