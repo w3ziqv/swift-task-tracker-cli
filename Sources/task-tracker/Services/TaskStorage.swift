@@ -6,8 +6,8 @@ class TaskStorage {
     
     init(fileName: String = "tasks.json") {
         let fileManager = FileManager.default
-        let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        self.fileURL = documentsDirectory.appendingPathComponent(fileName)
+        let currentDirectory = fileManager.currentDirectoryPath
+        self.fileURL = URL(fileURLWithPath: currentDirectory).appendingPathComponent(fileName)
     }
     
     /// Save tasks to JSON file
