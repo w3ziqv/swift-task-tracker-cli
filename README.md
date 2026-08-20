@@ -13,6 +13,8 @@ A simple task tracker written in Swift as a beginner project for learning progra
 - Task priorities (high, medium, low)
 - Input validation for empty titles, invalid numbers, and out-of-range priorities
 - Colored terminal output (green for done, red for high priority, yellow for medium)
+- Boxed, readable menu and task listings
+- Progress bar with task completion count and percentage
 - Simple interactive terminal menu
 
 ## Tech Stack
@@ -35,13 +37,16 @@ swift run
 ## Example Menu
 
 ```text
-=== TASK TRACKER ===
-1. Pokaż zadania
-2. Dodaj zadanie
-3. Oznacz jako zrobione
-4. Usuń zadanie
-5. Wyjście
-Wybierz opcję:
+┌───────────────────────────┐
+│  TASK TRACKER             │
+│                           │
+│   1. Pokaż zadania        │
+│   2. Dodaj zadanie        │
+│   3. Oznacz jako zrobione │
+│   4. Usuń zadanie         │
+│   5. Wyjście              │
+└───────────────────────────┘
+ Wybierz opcję:
 ```
 
 When adding a task, the app also asks for a priority:
@@ -67,12 +72,6 @@ It helped me practice:
 - file I/O with `FileManager` and `JSONEncoder` / `JSONDecoder`,
 - encoding and decoding data with `Codable`,
 - building a simple CLI application.
-
-## Future Improvements
-
-Planned next steps:
-
-- make terminal output nicer.
 
 ## License
 
