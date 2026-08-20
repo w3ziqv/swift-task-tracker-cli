@@ -1,8 +1,39 @@
-.DS_Store
-/.build
-/Packages
-xcuserdata/
-DerivedData/
+# Swift Package Manager
+.Package.resolved
+.build/
+.Packages
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+*.xcscheme
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Local storage files
+tasks.json
+*.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test output
+*.profdata
+*.profraw
+coverage.txt
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Netrc
 .netrc
