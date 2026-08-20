@@ -17,6 +17,7 @@ enum ConsoleColor: String {
 }
 
 /// Service for formatted console output
+@MainActor
 struct ConsoleOutput {
     private static var useColors: Bool = true
     

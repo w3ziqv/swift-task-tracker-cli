@@ -1,6 +1,7 @@
 import Foundation
 
 /// Supported languages for the application
+@MainActor
 enum Language: String, CaseIterable {
     case polish = "pl"
     case english = "en"

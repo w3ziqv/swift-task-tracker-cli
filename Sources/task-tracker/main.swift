@@ -1,6 +1,7 @@
 import Foundation
 
 /// Main application class
+@MainActor
 class TaskTrackerApp {
     private var tasks: [Task] = []
     private let storage: TaskStorage
