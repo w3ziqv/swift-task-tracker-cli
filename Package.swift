@@ -13,11 +13,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
             name: "task-tracker",
-            dependencies: [],
-            swiftSettings: [
-                // Enable experimental features for better Swift experience
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
+            dependencies: []
         ),
         .testTarget(
             name: "task-trackerTests",
