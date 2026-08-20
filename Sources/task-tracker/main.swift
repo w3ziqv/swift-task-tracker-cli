@@ -52,6 +52,8 @@ class TaskTrackerApp {
             ConsoleOutput.printTask(task, index: index + 1)
         }
         
+        let doneCount = tasks.filter { $0.isDone }.count
+        ConsoleOutput.printProgress(done: doneCount, total: tasks.count)
         ConsoleOutput.printSeparator()
     }
     

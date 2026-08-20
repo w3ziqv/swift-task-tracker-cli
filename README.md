@@ -18,6 +18,7 @@ A feature-rich task tracker written in Swift as a beginner-to-intermediate proje
 - ✅ **Creation Dates** - Track when each task was created
 - ✅ **Bilingual Support** - Toggle between Polish and English languages
 - ✅ **Colorful Output** - ANSI color codes for better terminal readability
+- ✅ **Progress Bar** - Completion count and percentage for task listings
 - ✅ **Input Validation** - Comprehensive validation for all user inputs
 - ✅ **Error Handling** - Graceful error handling with user-friendly messages
 

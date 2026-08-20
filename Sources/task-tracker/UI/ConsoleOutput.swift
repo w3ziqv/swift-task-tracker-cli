@@ -59,9 +59,20 @@ struct ConsoleOutput {
         print(colorize(String(repeating: "-", count: 40), .dim))
     }
     
+    /// Print a progress bar with completion count and percentage
+    static func printProgress(done: Int, total: Int) {
+        guard total > 0 else { return }
+        let percent = Int((Double(done) / Double(total)) * 100)
+        let barWidth = 20
+        let filled = Int((Double(done) / Double(total)) * Double(barWidth))
+        let bar = String(repeating: "█", count: filled) + String(repeating: "░", count: barWidth - filled)
+        let barColor: ConsoleColor = percent == 100 ? .green : (percent >= 50 ? .yellow : .cyan)
+        print(colorize("Progress: \(bar) \(done)/\(total) (\(percent)%)", barColor))
+    }
+    
     /// Print a task with appropriate formatting
     static func printTask(_ task: Task, index: Int) {
-        let statusSymbol = task.isDone ? "[✓]" : "[ ]"
+        let statusSymbol = task.isDone ? "[Γ£ô]" : "[ ]"
         let statusColor: ConsoleColor = task.isDone ? .green : .white
         let priorityColor: ConsoleColor = 
             task.priority == .high ? .red : 
